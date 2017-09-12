@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/transparent"
     tools:context="alvinwong.shopifychallenge.MainActivity">
 
 
@@ -22,21 +23,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="$0.00"
-        android:layout_marginTop="153dp"
+        android:layout_marginTop="115dp"
+        android:textStyle="bold"
         android:layout_alignParentTop="true"
         android:layout_alignLeft="@+id/total_sold"
         android:layout_alignStart="@+id/total_sold"
-        android:textStyle="bold"/>
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
 
     <TextView
         android:id="@+id/textview2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Total amount of awesome bronze bags sold"
+        android:layout_marginTop="40dp"
+        android:textSize="18sp"
         android:layout_below="@+id/textview1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:textSize="18sp"/>
+        android:layout_centerHorizontal="true" />
     <TextView
         android:id="@+id/total_sold"
         android:layout_width="wrap_content"
@@ -45,5 +48,17 @@
         android:text="0 bags"
         android:layout_below="@+id/textview2"
         android:layout_centerHorizontal="true"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shopping_cart"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp" />
+
+
 </RelativeLayout>
