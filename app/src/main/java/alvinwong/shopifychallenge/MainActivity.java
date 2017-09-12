@@ -53,13 +53,16 @@ public class MainActivity extends AppCompatActivity {
         try {
             response_json = new JSONObject(response);
             JSONArray orders = response_json.getJSONArray("orders");
+
             ArrayList<JSONObject> user_orders = getOrders(orders, "Napoleon", "Batz");
             double total_price = getTotalSpent(user_orders);
             String str_total_price = Double.toString(total_price);
             total_Spent.setText("$" + str_total_price);
+
             int bronzeBagsSold = getBronzeBagsSold(orders);
             String str_bronzeBags_sold = Integer.toString(bronzeBagsSold);
             total_sold.setText(str_bronzeBags_sold + " bags");
+
         } catch (JSONException e) {
             e.printStackTrace();
         }
