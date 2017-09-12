@@ -1,3 +1,3 @@
 # ShopifyChallenge
 
-Mobile development problem
+Shopify 2018 internship Mobile development problem
